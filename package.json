@@ -1,0 +1,11 @@
+{
+  "name": "superhero-hunter",
+  "version": "1.0.0",
+  "description": "A product made using Marvel API",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ujjwal Jain",
+  "license": "ISC"
+}
