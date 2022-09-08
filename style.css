@@ -15,8 +15,7 @@ header div{
     color: red;
     font-size: 2rem;
     text-decoration: none;
-    position: absolute;
-    right: 450;
+    margin-left: 800px;
 }
 
 
@@ -34,6 +33,7 @@ header div{
 
 #search-div i{
     padding: 10px;
+    background-color: white;
 }
 #search-bar{
     padding: 10px;
@@ -51,7 +51,7 @@ body{
 img{
     height: 250px;
     width: 250px;
-    margin: 35px;
+    /* margin: 35px; */
 }
 
 #container{
@@ -64,8 +64,17 @@ img{
     justify-content: space-around;
 }
 
+a{
+    text-decoration: none;
+    color: white;
+}
+
+
 .characters{
     position: relative;
+    border: 1px solid black;
+    margin: 35px;
+    background-color: black;
 }
 
 .fav{
@@ -73,12 +82,16 @@ img{
     height: 30px;
     width: 30px;
     position: absolute;
-    margin: 35px;
-    right: 0;
+    /* margin: 35px; */
+    right: 7;
+    bottom: 7;
     justify-content: center;
     align-items: center;
     border: 1px solid black;
+    color: white;
+    font-size: 1.5rem;
 }
+
 
 
 .fav-clicked{

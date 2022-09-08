@@ -11,7 +11,7 @@ for (const [key, value] of urlParams) {
     
 }
 
-function single(){
+function getSingleCharacter(){
     // console.log('hello');
     var myRequest = new XMLHttpRequest();
 
@@ -24,7 +24,7 @@ function single(){
         var charName = JSONresponse.data.results[0].name;
         // console.log(JSONresponse);
         var newDiv = div1.appendChild(document.createElement('div'));
-        newDiv.innerHTML = charName+'<br>';
+        newDiv.innerHTML = '<p>'+ charName +'</p>';
         var imgTag = newDiv.appendChild(document.createElement('img'));
         imgTag.setAttribute('src', imageURL );
         
@@ -46,4 +46,4 @@ function single(){
 
 // console.log(url);
 
-window.onload = single;
+window.onload = getSingleCharacter;

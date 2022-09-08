@@ -48,7 +48,7 @@ function getAllCharacters(){
         anchorTag.setAttribute('href', '/superhero-hunter/character.html?id='+id);
         var imgTag = anchorTag.appendChild(document.createElement('img'));
         imgTag.setAttribute("src", imageURL);
-        anchorTag.appendChild(document.createElement('p')).innerText = charName;  
+        anchorTag.appendChild(document.createElement('p')).innerHTML = '&nbsp &nbsp' + charName;  
         
         favClicked = document.querySelectorAll('.fav');
         // // console.log(favClicked[10]);
