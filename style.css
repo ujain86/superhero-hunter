@@ -1,3 +1,49 @@
+/* Header */
+header{
+    height: 20vh;
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+}
+header div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#favorites-div a{
+    color: red;
+    font-size: 2rem;
+    text-decoration: none;
+    position: absolute;
+    right: 450;
+}
+
+
+#logo{
+    background-image: url(./marvel.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: auto;
+    width: 200px;
+}
+
+#search-div{
+    margin-right: 70px;
+}
+
+#search-div i{
+    padding: 10px;
+}
+#search-bar{
+    padding: 10px;
+    width: 300px;
+}
+
+
+
+/* body */
+
 body{
     margin: 0;
 }
