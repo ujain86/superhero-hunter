@@ -1,6 +1,11 @@
+body{
+    margin: 0;
+}
+
 img{
-    height: 200px;
-    width: 200px;
+    height: 250px;
+    width: 250px;
+    margin: 35px;
 }
 
 #container{
@@ -22,6 +27,7 @@ img{
     height: 30px;
     width: 30px;
     position: absolute;
+    margin: 35px;
     right: 0;
     justify-content: center;
     align-items: center;

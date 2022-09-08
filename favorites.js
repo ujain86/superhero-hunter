@@ -1,4 +1,4 @@
-var div1 = document.getElementById('div1');
+var div1 = document.getElementById('container');
 var hash = '860b056faebcf3f7b371c6b40515e37c';
 
 if(JSON.parse(localStorage.getItem('ids'))){
