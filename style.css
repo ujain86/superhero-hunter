@@ -11,7 +11,7 @@ header div{
     align-items: center;
 }
 
-#favorites-div a{
+#target a{
     color: red;
     font-size: 2rem;
     text-decoration: none;

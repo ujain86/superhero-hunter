@@ -45,7 +45,7 @@ function getAllCharacters(){
         }
 
         var anchorTag = newDiv.appendChild(document.createElement('a'));
-        anchorTag.setAttribute('href', '/marvel/try.html?id='+id);
+        anchorTag.setAttribute('href', '/superhero-hunter/character.html?id='+id);
         var imgTag = anchorTag.appendChild(document.createElement('img'));
         imgTag.setAttribute("src", imageURL);
         anchorTag.appendChild(document.createElement('p')).innerText = charName;  
