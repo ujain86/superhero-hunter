@@ -3,7 +3,6 @@ var key = '?ts=1&apikey=f584d5df205ec1d450f443087814077d&hash=860b056faebcf3f7b3
 var container = document.querySelector('#container');
 
 
-
 if(JSON.parse(localStorage.getItem('ids'))){
     var arr = JSON.parse(localStorage.getItem('ids'));
 }
@@ -49,7 +48,7 @@ function getAllCharacters(){
         anchorTag.setAttribute('href', '/marvel/try.html?id='+id);
         var imgTag = anchorTag.appendChild(document.createElement('img'));
         imgTag.setAttribute("src", imageURL);
-        anchorTag.appendChild(document.createElement('p')).innerText = charName;
+        anchorTag.appendChild(document.createElement('p')).innerText = charName;  
         
         favClicked = document.querySelectorAll('.fav');
         // // console.log(favClicked[10]);
