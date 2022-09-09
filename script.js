@@ -54,9 +54,9 @@ function getAllCharacters(){
         let search = document.getElementById('search-bar');
         let searchButton = document.getElementById('search-btn');
         search.addEventListener('input', function(e){
-            v = e.target.value;
+            v = e.target.value.toLowerCase();
             console.log(v);
-            if(v == charName){
+            if(v == charName.toLowerCase()){
                 console.log('found');
                 searchButton.addEventListener('click', function(){
                     window.location.href = '/superhero-hunter/character.html?id='+id;
