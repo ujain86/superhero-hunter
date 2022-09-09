@@ -5,7 +5,7 @@ header{
     display: flex;
     justify-content: space-between;
     background-color: black;
-    position: relative;
+    /* position: relative; */
 }
 header div{
     display: flex;
@@ -15,15 +15,6 @@ header div{
     /* position: absolute; */
 }
 
-#target a{
-    color: red;
-    font-size: 2rem;
-    text-decoration: none;
-    position: absolute;
-    right: 0;
-}
-
-
 #logo{
     background-image: url(./marvel.jpg);
     background-size: contain;
@@ -32,12 +23,21 @@ header div{
 }
 
 #target{
-    width: 30%;
+    width: 40%;
     position: relative;
 }
 
+#target a{
+    color: red;
+    font-size: 2rem;
+    text-decoration: none;
+    position: absolute;
+    right: 30;
+}
+
 #search-div{
-    width: 40%;
+    width: 30%;
+    position: relative;
 }
 
 #search-div i{
