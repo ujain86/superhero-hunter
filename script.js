@@ -26,21 +26,10 @@ function getAllCharacters(){
         var length = JSONresponse.data.results.length;
         
         for(let i=0; i<length ; i++){
-        var imageURL = JSONresponse.data.results[i].thumbnail.path + '.' +JSONresponse.data.results[i].thumbnail.extension  ;
-        var charName = JSONresponse.data.results[i].name;
+        let imageURL = JSONresponse.data.results[i].thumbnail.path + '.' +JSONresponse.data.results[i].thumbnail.extension  ;
+        let charName = JSONresponse.data.results[i].name;
         let id = JSONresponse.data.results[i].id;
 
-        // //Search functionality
-        // let search = document.getElementById('search-bar');
-        // search.addEventListener('input', function(e){
-        //     v = e.target.value;
-        //     console.log(v);
-        //     if(v == charName){
-        //         console.log('found');
-        //     }
-        // })
-
-        // console.log(imageURL);
 
         //create new elements
         var newDiv = container.appendChild(document.createElement('div'));
@@ -60,6 +49,21 @@ function getAllCharacters(){
         var imgTag = anchorTag.appendChild(document.createElement('img'));
         imgTag.setAttribute("src", imageURL);
         anchorTag.appendChild(document.createElement('p')).innerHTML = '&nbsp &nbsp' + charName;  
+
+        //Search functionality
+        let search = document.getElementById('search-bar');
+        let searchButton = document.getElementById('search-btn');
+        search.addEventListener('input', function(e){
+            v = e.target.value;
+            console.log(v);
+            if(v == charName){
+                console.log('found');
+                searchButton.addEventListener('click', function(){
+                    window.location.href = '/superhero-hunter/character.html?id='+id;
+                })
+                
+            }
+        })
         
         favClicked = document.querySelectorAll('.fav');
         // // console.log(favClicked[10]);
