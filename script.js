@@ -10,6 +10,7 @@ else{
     var arr = [];
 }
 
+var v;
 
 
 function getAllCharacters(){
@@ -28,6 +29,16 @@ function getAllCharacters(){
         var imageURL = JSONresponse.data.results[i].thumbnail.path + '.' +JSONresponse.data.results[i].thumbnail.extension  ;
         var charName = JSONresponse.data.results[i].name;
         let id = JSONresponse.data.results[i].id;
+
+        // //Search functionality
+        // let search = document.getElementById('search-bar');
+        // search.addEventListener('input', function(e){
+        //     v = e.target.value;
+        //     console.log(v);
+        //     if(v == charName){
+        //         console.log('found');
+        //     }
+        // })
 
         // console.log(imageURL);
 

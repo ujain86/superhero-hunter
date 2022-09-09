@@ -1,34 +1,43 @@
 /* Header */
 header{
     height: 20vh;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     background-color: black;
+    position: relative;
 }
 header div{
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100%;
+    /* position: absolute; */
 }
 
 #target a{
     color: red;
     font-size: 2rem;
     text-decoration: none;
-    margin-left: 800px;
+    position: absolute;
+    right: 0;
 }
 
 
 #logo{
     background-image: url(./marvel.jpg);
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
-    height: auto;
-    width: 200px;
+    width: 30%;
+}
+
+#target{
+    width: 30%;
+    position: relative;
 }
 
 #search-div{
-    margin-right: 70px;
+    width: 40%;
 }
 
 #search-div i{
