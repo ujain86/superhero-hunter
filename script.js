@@ -8,6 +8,7 @@ if(JSON.parse(localStorage.getItem('ids'))){
 }
 else{
     var arr = [];
+    localStorage.setItem('ids', JSON.stringify(arr));
 }
 
 var v;
