@@ -1,4 +1,4 @@
-var div1 = document.getElementById('div1');
+var container = document.getElementById('char-container');
 
 //to fetch id parameter from URL
 const urlParams = new URLSearchParams(location.search);
@@ -39,15 +39,17 @@ function getSingleCharacter(){
         // console.log(comicItems);
         
 
-        var newDiv1 = div1.appendChild(document.createElement('div'));
-        newDiv1.setAttribute('class', 'image');
-        var imgTag = newDiv1.appendChild(document.createElement('img')).setAttribute('src', imageURL );
+        var newDiv1 = container.appendChild(document.createElement('div'));
+        newDiv1.setAttribute('class', 'basic-info');
+        var imgDiv = newDiv1.appendChild(document.createElement('div'));
+        imgDiv.setAttribute('class', 'image');
+        var imgTag = imgDiv.appendChild(document.createElement('img')).setAttribute('src', imageURL );
 
-        var newDiv2 = div1.appendChild(document.createElement('div'));
-        newDiv2.setAttribute('class', 'bio');
-        newDiv2.innerHTML = '<h3>'+ charName +'</h3> <p>' + description + '</p>';
+        var bioDiv = newDiv1.appendChild(document.createElement('div'));
+        bioDiv.setAttribute('class', 'bio');
+        bioDiv.innerHTML = '<h3>'+ charName +'</h3> <p>' + description + '</p>';
 
-        var newDiv3 = div1.appendChild(document.createElement('div'));
+        var newDiv3 = container.appendChild(document.createElement('div'));
         newDiv3.setAttribute('class', 'comics');
         newDiv3.innerHTML = '<h2> Total number of Comics available : '+ totalComics +'</h2>';
         var ul = newDiv3.appendChild(document.createElement('ul'));
@@ -60,7 +62,7 @@ function getSingleCharacter(){
         };
         
 
-        var newDiv4 = div1.appendChild(document.createElement('div'));
+        var newDiv4 = container.appendChild(document.createElement('div'));
         newDiv4.setAttribute('class', 'stories');
         newDiv4.innerHTML = '<h2> Total number of Stories available : '+ totalStories +'</h2>';
         var ul = newDiv4.appendChild(document.createElement('ul'));
@@ -72,7 +74,7 @@ function getSingleCharacter(){
         ul.appendChild(node);
         };
 
-        var newDiv5 = div1.appendChild(document.createElement('div'));
+        var newDiv5 = container.appendChild(document.createElement('div'));
         newDiv5.setAttribute('class', 'series');
         newDiv5.innerHTML = '<h2> Total number of Series available : '+ totalSeries +'</h2>';
         var ul = newDiv5.appendChild(document.createElement('ul'));
@@ -84,7 +86,7 @@ function getSingleCharacter(){
         ul.appendChild(node);
         };
 
-        var newDiv6 = div1.appendChild(document.createElement('div'));
+        var newDiv6 = container.appendChild(document.createElement('div'));
         newDiv6.setAttribute('class', 'events');
         newDiv6.innerHTML = '<h2> Total number of Events available : '+ totalEvents +'</h2>';
         var ul = newDiv6.appendChild(document.createElement('ul'));
