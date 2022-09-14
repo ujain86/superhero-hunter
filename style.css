@@ -110,3 +110,7 @@ a{
 .hide{
     display: none;
 }
+
+.characters:hover{
+    translate: 0 -10px;
+}

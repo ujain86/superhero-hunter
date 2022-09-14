@@ -1,4 +1,4 @@
-var hash = '860b056faebcf3f7b371c6b40515e37c';
+// var hash = '860b056faebcf3f7b371c6b40515e37c';
 var key = '?ts=1&apikey=f584d5df205ec1d450f443087814077d&hash=860b056faebcf3f7b371c6b40515e37c';
 var container = document.querySelector('#container');
 
@@ -11,7 +11,7 @@ else{
     localStorage.setItem('ids', JSON.stringify(arr));
 }
 
-var v;
+var searchInput;
 
 
 function getAllCharacters(){
@@ -54,10 +54,10 @@ function getAllCharacters(){
         //Search functionality
         let search = document.getElementById('search-bar');
         let searchButton = document.getElementById('search-btn');
-        search.addEventListener('input', function(e){
-            v = e.target.value.toLowerCase();
-            console.log(v);
-            if(v == charName.toLowerCase()){
+        search.addEventListener('input', function(event){
+            searchInput = event.target.value.toLowerCase();
+            console.log(searchInput);
+            if(searchInput == charName.toLowerCase()){
                 console.log('found');
                 searchButton.addEventListener('click', function(){
                     window.location.href = '/superhero-hunter/character.html?id='+id;
