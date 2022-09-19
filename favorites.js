@@ -44,7 +44,8 @@ function showFavoriteCHaracters(){
 
                     var imgTag = anchorTag.appendChild(document.createElement('img'));
                     imgTag.setAttribute("src", imageURL);
-                    anchorTag.appendChild(document.createElement('p')).innerText = charName;
+                    // anchorTag.appendChild(document.createElement('p')).innerText = charName;
+                    anchorTag.appendChild(document.createElement('p')).innerHTML = '&nbsp &nbsp' + charName;  
                     
                 }
             }

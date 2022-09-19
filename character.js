@@ -20,6 +20,7 @@ function getSingleCharacter(){
         
         var JSONresponse = JSON.parse(requestResponse);
 
+        //Store required data from API into variables
         var imageURL = JSONresponse.data.results[0].thumbnail.path + '.' + JSONresponse.data.results[0].thumbnail.extension ;
         var charName = JSONresponse.data.results[0].name;
         var description = JSONresponse.data.results[0].description;
@@ -36,9 +37,8 @@ function getSingleCharacter(){
         var totalEvents = JSONresponse.data.results[0].events.available;
         var eventItems = JSONresponse.data.results[0].events.items;
         
-        // console.log(comicItems);
         
-
+        //Create new elements
         var newDiv1 = container.appendChild(document.createElement('div'));
         newDiv1.setAttribute('class', 'basic-info');
         var imgDiv = newDiv1.appendChild(document.createElement('div'));
